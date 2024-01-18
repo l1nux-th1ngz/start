@@ -7,11 +7,11 @@ rustup default stable
 yay -S --noconfirm gdb ninja gcc cmake meson libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols cairo pango seatd libxkbcommon xcb-util-wm xorg-xwayland libinput libliftoff libdisplay-info cpio tomlplusplus nodejs python gtk2 gtk3 gtk4 gtkmm gtk-layer-shell glibc jq aalib jo zip unzip ffmpeg-full 7-zip-full p7zip-gui spotify-launcher python-pipx python-pip tk zenity yad python-pyperclip dart-sass python nm-connection-editor gum mpris font-manager reflector reflector-simple python-pyaml python-click python-rich python-openai python-tiktoken dunst mako swaync kvantum xapp ranger
 
 # Star of the show
-yay -S --confirm hyprland
+yay -S --noconfirm hyprland
 
 wait
 
-yay -S --confirm xdg-utils xdg-utils-cxx xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr xdg-desktop-portal-hyprland xdg-desktop-portal-xapp xdg-user-dirs xdg-user-dirs-gtk
+yay -S --noconfirm xdg-utils xdg-utils-cxx xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr xdg-desktop-portal-hyprland xdg-desktop-portal-xapp xdg-user-dirs xdg-user-dirs-gtk
 
 # Update user directories
 xdg-user-dirs-update
@@ -20,7 +20,7 @@ xdg-user-dirs-update
 yay -S --noconfirm firefox firefox-pwa-bin kitty alacritty hyper zoxide eza bun terminator
 
 # Editors and IDEs
-notepadqq geany geany-plugins visual-studio-code-bin marker nano
+yay -S --noconfirm notepadqq geany geany-plugins visual-studio-code-bin marker nano
 
 # Set monitor in hyprland.conf
 echo "set monitor to monitor=DP-1,1920x1080@60,0x0,1 or monitor=eDP-1,1920x1080@60,0x0,1 if it's a laptop." > ~/.config/hypr/hyprland.conf
@@ -30,10 +30,8 @@ yay -S --noconfirm waybar clipman wlogout xdg-desktop-portal-hyprland wofi polki
 
 sleep 2
 
-# Set swww path !/bin/sh
-cd $HOME/BGs
 
-# Make it pretty add-ins
+# Add-Ins
 yay -S --noconfirm wofi-pass wofi-emojies wofi-record wofi-bluetooth rofi-bluetooth-git gtklock-powerbar-module gtklock-playerctl-module gtklock-userinfo-module rofi-powermenu
 
 # Git Shit
