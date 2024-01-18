@@ -44,4 +44,24 @@ cp -r .config/hypr $HOME/.config/hypr
 yay -S --noconfirm archiso archinstall arch-install-scripts archiso-profiles aurutils
 
 # Copy to ~/.config
-cp -r dunst swaync mako wofi kitty alacritty rofi hyper waybar wlogout cava glava swww vlc nano mpv gtklock ranger cavasik hyprshotgun
+# Copy to ~/.config
+cp -r dunst $HOME/.config
+cp -r swaync $HOME/.config
+cp -r mako $HOME/.config
+cp -r wofi $HOME/.config
+cp -r kitty $HOME/.config
+cp -r alacritty $HOME/.config
+cp -r rofi $HOME/.config
+cp -r hyper $HOME/.config
+cp -r waybar $HOME/.config
+cp -r wlogout $HOME/.config
+cp -r cava $HOME/.config
+cp -r glava $HOME/.config
+cp -r swww $HOME/.config
+cp -r vlc $HOME/.config
+cp -r nano $HOME/.config
+cp -r mpv $HOME/.config
+cp -r gtklock $HOME/.config
+cp -r ranger $HOME/.config
+cp -r cavasik $HOME/.config
+cp -r hyprshotgun $HOME/.config
